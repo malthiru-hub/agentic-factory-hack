@@ -136,8 +136,8 @@ async def main():
             response = openai_client.responses.create(
                 conversation=conversation.id,
                 input='Hello, can you classify the following anomalies for machine-001: [{"metric": "curing_temperature", "value": 179.2},{"metric": "cycle_time", "value": 14.5}]',
-                extra_body={"agent": {"name": agent.name,
-                                      "type": "agent_reference"}},
+                extra_body={"agent_reference": {"name": agent.name,
+                                                "type": "agent_reference"}},
             )
 
             print(f"✅ Agent response: {response.output_text}")

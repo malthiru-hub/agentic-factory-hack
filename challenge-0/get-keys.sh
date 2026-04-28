@@ -347,7 +347,7 @@ if [ -n "$aiFoundryEndpoint" ]; then
 else
     echo "AZURE_AI_CHAT_ENDPOINT=\"\"" >> "$ENV_OUT"
 fi
-
+echo "AZURE_AI_CHAT_MODEL=\"$azureAIChatModel\"" >> "$ENV_OUT"
 # Constant for the workshop (placed after the endpoint for readability)
 echo "AZURE_AI_CHAT_MODEL_DEPLOYMENT_NAME=\"gpt-4o-mini\"" >> "$ENV_OUT"
 # Construct AI Foundry Hub Endpoint if missing

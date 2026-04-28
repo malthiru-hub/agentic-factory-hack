@@ -10,6 +10,7 @@ azure-ai-projects>=2.1.0
 azure-cosmos>=4.5.0
 azure-identity>=1.25.3
 azure-search-documents>=11.7.0b2
+azure-core>=1.39.0
 
 # Azure AI Tracing & Monitoring
 azure-ai-inference[tracing]>=1.0.0b9
